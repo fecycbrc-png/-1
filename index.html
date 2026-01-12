@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 小手机</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="phone">
+  <!-- 主屏幕 -->
+  <div id="home" class="screen active">
+
+    <!-- 时间组件 -->
+    <div id="time-widget">
+      <div id="date"></div>
+      <div id="time"></div>
+    </div>
+
+    <!-- 应用列表 -->
+    <div class="apps">
+      <button onclick="openApp('settings')">设置</button>
+      <button onclick="openApp('worldbook')">世界书</button>
+      <button onclick="openApp('chat')">聊天</button>
+      <button onclick="openApp('beauty')">美化</button>
+      <button onclick="openApp('couple')">情侣空间</button>
+    </div>
+  </div>
+
+  <!-- 其他页面 -->
+  <div id="settings" class="screen"></div>
+  <div id="worldbook" class="screen"></div>
+  <div id="chat" class="screen"></div>
+  <div id="beauty" class="screen"></div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/worldbook.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/beauty.js"></script>
+
+</body>
+</html>
